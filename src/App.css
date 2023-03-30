@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EEE;
+}
+div#root{
+    padding-top: 100px;
+    display: grid;
+    place-items: center;
+    background-color: #EEE;
+}
+h1{
+    text-align: center;
+}
+div#root > div{
+    width: 70%;
+    margin: auto;
+    max-width: 700px;
+}
+div#root > div > div{
+    display: grid;
+    place-items: center;
+    background-color: white;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+    padding: 30px 50px;
+    border-radius: 5px;
+    gap: 40px;
+}
+#main-form{
+    display: flex;
+    border-bottom: 2px solid gray;
+    padding: 15px 25px;  
+}
+#main-form input{
+    outline:none;
+    background-color: inherit;
+    border: none;
+    font-size: 20px;
+}
+#main-form button{
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #0081C9;
+    background-color: #0081C9;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+#main-form button:hover{
+    background-color: #002E94;
+    border: 1px solid #002E94;
+}
+#container{
+    width: 80%;
+    display: grid;
+    gap: 10px;
+}
+.item-container{
+    display: flex;
+    background-color: #EEE;
+    padding: 0;
+    font-size: 20px;
+}
+.item-container button{
+    all: unset;
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    
+}
+.item-container input{
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+form.item-container{
+    border-bottom: 2px solid black;
+}
+.item-name{
+    padding: 15px 25px;
+    flex: 1;
+}
+#edit-item{
+    background-color: #54B435;
+}
+#remove-item{
+    background-color: red;
+}
+#save-changes{
+    background-color: #2192FF;
+}
